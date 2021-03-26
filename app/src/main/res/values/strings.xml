@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">W3Timer</string>
+
+    <string name="dialog_heading">Set timer countdown value</string>
+    <string name="dialog_txt_timer_value">Timer value</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+</resources>
