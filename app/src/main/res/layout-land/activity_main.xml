@@ -19,22 +19,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Set timer"
-        app:layout_constraintBottom_toTopOf="@+id/progressBar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/progressBar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <me.zhanghai.android.materialprogressbar.MaterialProgressBar
         android:id="@+id/progressBar"
         style="@style/Widget.MaterialProgressBar.ProgressBar"
-        android:minWidth="306dp"
-        android:minHeight="306dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:minWidth="306dp"
+        android:minHeight="306dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,11 +60,11 @@
         android:layout_height="wrap_content"
         android:clickable="true"
         android:tint="@android:color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/fab_pause"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintBottom_toTopOf="@+id/fab_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75"
         app:srcCompat="@drawable/ic_play" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -75,9 +75,8 @@
         android:tint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
-        app:layout_constraintVertical_bias="0.25"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_pause" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -88,8 +87,8 @@
         android:tint="@android:color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/fab_pause"
-        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintStart_toEndOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/fab_pause"
         app:layout_constraintVertical_bias="0.25"
         app:srcCompat="@drawable/ic_stop" />
 
