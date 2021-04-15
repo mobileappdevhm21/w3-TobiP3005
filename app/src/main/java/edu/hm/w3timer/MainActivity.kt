@@ -83,8 +83,8 @@ class MainActivity : AppCompatActivity(), Timer.TimerListener, LifecycleObserver
         d.setView(dialogView)
         val numberPickerMin = dialogView.findViewById<NumberPicker>(R.id.dialog_number_picker_min)
         val numberPickerSec = dialogView.findViewById<NumberPicker>(R.id.dialog_number_picker_sec)
-        numberPickerMin.maxValue = 60
-        numberPickerSec.maxValue = 60
+        numberPickerMin.maxValue = 999
+        numberPickerSec.maxValue = 59
         numberPickerMin.minValue = 0
         numberPickerSec.minValue = 0
         numberPickerMin.value = 1
